@@ -325,3 +325,20 @@
     font-size: 20px;
     color: white;
   }
+
+  @media screen and (max-width: 600px){
+    .container-produtos{
+        width: 100%;
+    }
+    .box-produto {
+        /* //min-width: 186px; */
+        max-width: 90%;
+        width: 90%;
+      }
+
+    .box-produto img {
+        max-height: 229px;
+        max-width: 229px;
+        margin-inline: auto;
+    }
+  }
