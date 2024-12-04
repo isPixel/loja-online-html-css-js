@@ -10,7 +10,6 @@
   font-size: 35px;
 }
 
-/* Reset e configurações básicas */
 * {
     margin: 0;
     padding: 0;
@@ -264,18 +263,18 @@
     margin-top: 40px;
     width: 100%;
     padding: 60px 0;
-    background: #1a1a1a; /* Fundo preto */
+    background: #1a1a1a; 
     display: flex;
     justify-content: center;
-    color: #ffffff; /* Texto branco */
+    color: #ffffff; 
 }
 
 .container-indique-ganhe {
     width: 80%;
     max-width: 1200px;
-    background: rgba(255, 255, 255, 0.05); /* Container com fundo mais suave */
+    background: rgba(255, 255, 255, 0.05); 
     border-radius: 15px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); 
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -301,7 +300,7 @@
 .texto-indique h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #ffffff; /* Cor do título branco */
+    color: #ffffff; 
 }
 
 .texto-indique p {
@@ -311,8 +310,8 @@
 .botao-indique {
     padding: 15px 30px;
     font-size: 1.2em;
-    color: #1a1a1a; /* Texto do botão preto */
-    background-color: #ffffff; /* Fundo do botão branco */
+    color: #1a1a1a;
+    background-color: #ffffff;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -320,7 +319,7 @@
 }
 
 .botao-indique:hover {
-    background-color: #f1f1f1; /* Fundo do botão com cor mais suave ao passar o mouse */
+    background-color: #f1f1f1;
     transform: translateY(-3px);
 }
 
@@ -330,7 +329,7 @@
     width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Sombra mais sutil para a imagem */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
 }
 
 @media screen and (max-width: 768px) {
