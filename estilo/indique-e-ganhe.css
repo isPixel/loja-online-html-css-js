@@ -259,92 +259,111 @@
     border-radius: 0px 20px 20px 0px;
     border: none;
   }
+  
+  #section-indique-ganhe {
+    margin-top: 40px;
+    width: 100%;
+    padding: 60px 0;
+    background: #1a1a1a; /* Fundo preto */
+    display: flex;
+    justify-content: center;
+    color: #ffffff; /* Texto branco */
+}
 
-  #section-produtos {
+.container-indique-ganhe {
+    width: 80%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.05); /* Container com fundo mais suave */
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.conteudo-indique-ganhe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.texto-indique {
+    flex: 2;
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.texto-indique h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffffff; /* Cor do título branco */
+}
+
+.texto-indique p {
+    margin-bottom: 20px;
+}
+
+.botao-indique {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #1a1a1a; /* Texto do botão preto */
+    background-color: #ffffff; /* Fundo do botão branco */
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.botao-indique:hover {
+    background-color: #f1f1f1; /* Fundo do botão com cor mais suave ao passar o mouse */
+    transform: translateY(-3px);
+}
+
+.imagem-indique {
+    flex: 1;
+    max-width: 350px;
     width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: column;
-  }
-
-  #section-produtos h1{
-    text-align: center;
-    color: #4d4949;
-    margin-block: 40px;
-  }
-
-  .container-produtos {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .box-produto {
-    min-width: 186px;
-    max-width: 250px;
-    width: 20%;
-    height: 400px;
-    box-shadow: 0px 0px 5px rgb(122, 121, 121);
     border-radius: 10px;
-    margin-block: 10px;
-    margin-inline: 20px;
-    display: flex;
-    flex-direction: column;
-    padding-inline: 10px;
-  }
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Sombra mais sutil para a imagem */
+}
 
-  .box-produto h2 {
-    font-size: 20px;
-  }
-
-  .box-produto p {
-    text-decoration: line-through;
-    color: rgb(236, 85, 85);
-  }
-
-  .preco {
-    color: green;
-  }
-
-  .box-produto button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    height: 40px;
-    background-color: #000000;
-    border: none;
-    border-radius: 5px;
-    margin-top: auto;
-    margin-bottom: 10px;
-    margin-inline: auto;
-    color: white;
-  }
-
-  .produto {
-    font-size: 20px;
-    color: white;
-  }
-
-  @media screen and (max-width: 600px){
-    .container-produtos{
-        width: 100%;
+@media screen and (max-width: 768px) {
+    .conteudo-indique-ganhe {
+        flex-direction: column;
+        align-items: center;
     }
-    .box-produto {
-        /* //min-width: 186px; */
-        max-width: 90%;
-        width: 90%;
-      }
 
-    .box-produto img {
-        max-height: 229px;
-        max-width: 229px;
-        margin-inline: auto;
+    .texto-indique {
+        text-align: center;
     }
-  }
 
-  #footer {
+    .botao-indique {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .texto-indique h1 {
+        font-size: 2em;
+    }
+
+    .texto-indique {
+        font-size: 1em;
+    }
+
+    .botao-indique {
+        font-size: 1em;
+    }
+}
+
+
+#footer {
     width: 100%;
     background-color: #000000;
     color: #fff;
